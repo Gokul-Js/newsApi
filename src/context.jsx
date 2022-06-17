@@ -53,6 +53,7 @@ const AppProvider = ({ children }) => {
     })
    }
 
+ 
   //pagination of Website
   const getNextPage = () => {
     dispatch({
@@ -71,7 +72,7 @@ const AppProvider = ({ children }) => {
   }, [state.query, state.page]); 
 
   return (
-    <AppContext.Provider value={{...state, removePost, searchPost, getNextPage, getPrevPage  }}>
+    <AppContext.Provider value={{...state, removePost, searchPost, getNextPage, getPrevPage }}>
       {children}
     </AppContext.Provider>
   )

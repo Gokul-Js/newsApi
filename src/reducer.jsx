@@ -24,6 +24,7 @@ const reducer = (state, action) => {
         ...state,
         query: action.payload,
       }
+
     case "NEXT_PAGE":
       let pageNumInc = state.page + 1;
 
